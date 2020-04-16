@@ -13,9 +13,12 @@ type Crawler interface {
 func main() {
 	// 각 사이트의 크롤러를 등록
 	crawlers := []Crawler{
-		//&crawler.MarketWatch{},
+		&crawler.MarketWatch{},
 		&crawler.Reuters{},
+		&crawler.CNBC{},
+		&crawler.WallST247{},
 		&crawler.USAToday{},
+		&crawler.SeekingAlpha{},
 		/* 여기에 추가 해주세요*/
 	}
 
